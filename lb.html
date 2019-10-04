@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+            <head>
+                <meta charset="utf-8">
+                <title>GAP's</title>
+                <link rel="stylesheet" type="text/css" href="main.css">
+                <link rel="stylesheet" href="js/jquery-ui-1.10.3.custom/css/custom-theme/jquery-ui-1.10.3.custom.min.css" />
+                <link rel="stylesheet" href="font-awesome-4.0.3/css/font-awesome.min.css">
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                <link rel="stylesheet" type="text/css" href="https://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/themes/excite-bike/jquery-ui.min.css" />
+                <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.jqueryui.min.css" />
+                <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+                <script src="https://code.jquery.com/jquery-migrate-3.0.0.js"></script>
+                <script src="js/moment-with-langs.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+                <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+                <script src="js/lb.js"></script>
+</head>
+<body>
+<form id="visualiserListeBlanche" name="visualiserListeBlanche" action="/listeblanche/visualiserListeBlanche.action" target="_blank" method="post">
+<!--<table class="wwFormTable">-->
+<div id="deconnexion"><a href="/listeblanche/deconnexion.action">D&#233;connexion</a></div>
+<div style="clear:both;"/>
+
+
+<input type="hidden" name="organization" value="AA" id="organization"/>
+
+
+<div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">Elements</a></li>
+    <li><a href="#tabs-2">Historique des publications</a></li>
+  </ul>
+  <div id="tabs-1">
+
+  <span id="nombreDomaines">Nombre total de domaines autoris&#233;s : <span id="domainCount" class="bold"> (AA) -  (BB)  </span></span>
+	  
+		  <table class="table table-hover table-bordered" id="domainTable">
+			  <thead>
+			  <tr>
+				  <th>Nom</th>
+				  <th>Description</th>
+				  <th>Certificat</th>
+				  <th>Responsable</th>
+				  <th>Support</th>
+				  <th>DateMaj</th>
+				  <th>&nbsp;</th>
+			  </tr>
+			  </thead>
+			  <tbody>
+			  
+			  <tr class="domainElement">
+                  <td data-name="nom" class="editableCell"><b>metier1</b></td>
+                  <td data-name="description" class="editableCell">&quot;metier1&quot;</td>
+                  <td data-name="dNCertificatOperateur" class="editableCell">CN=BB,ou=1234,O=GAP,ST=Nord (59),C=FR</td>
+                  <td data-name="responsableContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="supportContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="dateMaj" class="editableCell">2019-09-19 17:38:45</td>
+                  <td><i class="delete fa fa-times fa-lg"></i></td>
+</tr>
+<tr class="domainElement">
+                  <td data-name="nom" class="editableCell"><b>metier2</b></td>
+                  <td data-name="description" class="editableCell">&quot;metier2&quot;</td>
+                  <td data-name="dNCertificatOperateur" class="editableCell">CN=AA,ou=1234,O=GAP,ST=Nord (59),C=FR</td>
+                  <td data-name="responsableContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="supportContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="dateMaj" class="editableCell">2019-09-19 17:38:45</td>
+                  <td><i class="delete fa fa-times fa-lg"></i></td>
+</tr>
+<tr class="domainElement">
+                  <td data-name="nom" class="editableCell"><b>metier3</b></td>
+                  <td data-name="description" class="editableCell">&quot;metier3&quot;</td>
+                  <td data-name="dNCertificatOperateur" class="editableCell">CN=AA,ou=1234,O=GAP,ST=Nord (59),C=FR</td>
+                  <td data-name="responsableContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="supportContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="dateMaj" class="editableCell">2019-09-19 17:38:45</td>
+                  <td><i class="delete fa fa-times fa-lg"></i></td>
+</tr>
+<tr class="domainElement">
+                  <td data-name="nom" class="editableCell"><b>metier4</b></td>
+                  <td data-name="description" class="editableCell">&quot;metier4&quot;</td>
+                  <td data-name="dNCertificatOperateur" class="editableCell">CN=AA,ou=1234,O=GAP,ST=Nord (59),C=FR</td>
+                  <td data-name="responsableContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="supportContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="dateMaj" class="editableCell">2019-09-19 17:38:45</td>
+                  <td><i class="delete fa fa-times fa-lg"></i></td>
+</tr>
+<tr class="domainElement">
+                  <td data-name="nom" class="editableCell"><b>metier5</b></td>
+                  <td data-name="description" class="editableCell">&quot;metier5&quot;</td>
+                  <td data-name="dNCertificatOperateur" class="editableCell">CN=AA,ou=1234,O=GAP,ST=Nord (59),C=FR</td>
+                  <td data-name="responsableContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="supportContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="dateMaj" class="editableCell">2019-09-19 17:38:45</td>
+                  <td><i class="delete fa fa-times fa-lg"></i></td>
+</tr>
+<tr class="domainElement">
+                  <td data-name="nom" class="editableCell"><b>metier6</b></td>
+                  <td data-name="description" class="editableCell">&quot;metier6&quot;</td>
+                  <td data-name="dNCertificatOperateur" class="editableCell">CN=BB,ou=1234,O=GAP,ST=Nord (59),C=FR</td>
+                  <td data-name="responsableContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="supportContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="dateMaj" class="editableCell">2019-09-19 17:38:45</td>
+                  <td><i class="delete fa fa-times fa-lg"></i></td>
+</tr>
+<tr class="domainElement">
+                  <td data-name="nom" class="editableCell"><b>metier7</b></td>
+                  <td data-name="description" class="editableCell">&quot;metier7&quot;</td>
+                  <td data-name="dNCertificatOperateur" class="editableCell">CN=AA,ou=1234,O=GAP,ST=Nord (59),C=FR</td>
+                  <td data-name="responsableContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="supportContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="dateMaj" class="editableCell">2019-09-19 17:38:45</td>
+                  <td><i class="delete fa fa-times fa-lg"></i></td>
+</tr>
+<tr class="domainElement">
+                  <td data-name="nom" class="editableCell"><b>metier8</b></td>
+                  <td data-name="description" class="editableCell">&quot;metier8&quot;</td>
+                  <td data-name="dNCertificatOperateur" class="editableCell">CN=AA,ou=1234,O=GAP,ST=Nord (59),C=FR</td>
+                  <td data-name="responsableContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="supportContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="dateMaj" class="editableCell">2019-09-19 17:38:45</td>
+                  <td><i class="delete fa fa-times fa-lg"></i></td>
+</tr>
+<tr class="domainElement">
+                  <td data-name="nom" class="editableCell"><b>metier9</b></td>
+                  <td data-name="description" class="editableCell">&quot;metier9&quot;</td>
+                  <td data-name="dNCertificatOperateur" class="editableCell">CN=AA,ou=1234,O=GAP,ST=Nord (59),C=FR</td>
+                  <td data-name="responsableContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="supportContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="dateMaj" class="editableCell">2019-09-19 17:38:45</td>
+                  <td><i class="delete fa fa-times fa-lg"></i></td>
+</tr>
+<tr class="domainElement">
+                  <td data-name="nom" class="editableCell"><b>metier10</b></td>
+                  <td data-name="description" class="editableCell">&quot;metier10&quot;</td>
+                  <td data-name="dNCertificatOperateur" class="editableCell">CN=AA,ou=1234,O=GAP,ST=Nord (59),C=FR</td>
+                  <td data-name="responsableContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="supportContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="dateMaj" class="editableCell">2019-09-19 17:38:45</td>
+                  <td><i class="delete fa fa-times fa-lg"></i></td>
+</tr>
+<tr class="domainElement">
+                  <td data-name="nom" class="editableCell"><b>metier11</b></td>
+                  <td data-name="description" class="editableCell">&quot;metier11&quot;</td>
+                  <td data-name="dNCertificatOperateur" class="editableCell">CN=AA,ou=1234,O=GAP,ST=Nord (59),C=FR</td>
+                  <td data-name="responsableContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="supportContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="dateMaj" class="editableCell">2019-09-19 17:38:45</td>
+                  <td><i class="delete fa fa-times fa-lg"></i></td>
+</tr>
+<tr class="domainElement">
+                  <td data-name="nom" class="editableCell"><b>metier12</b></td>
+                  <td data-name="description" class="editableCell">&quot;metier12&quot;</td>
+                  <td data-name="dNCertificatOperateur" class="editableCell">CN=AA,ou=1234,O=GAP,ST=Nord (59),C=FR</td>
+                  <td data-name="responsableContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="supportContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="dateMaj" class="editableCell">2019-09-19 17:38:45</td>
+                  <td><i class="delete fa fa-times fa-lg"></i></td>
+</tr>
+<tr class="domainElement">
+                  <td data-name="nom" class="editableCell"><b>metier13</b></td>
+                  <td data-name="description" class="editableCell">&quot;metier13&quot;</td>
+                  <td data-name="dNCertificatOperateur" class="editableCell">CN=AA,ou=1234,O=GAP,ST=Nord (59),C=FR</td>
+                  <td data-name="responsableContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="supportContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="dateMaj" class="editableCell">2019-09-19 17:38:45</td>
+                  <td><i class="delete fa fa-times fa-lg"></i></td>
+</tr>
+<tr class="domainElement">
+                  <td data-name="nom" class="editableCell"><b>metier14</b></td>
+                  <td data-name="description" class="editableCell">&quot;metier14&quot;</td>
+                  <td data-name="dNCertificatOperateur" class="editableCell">CN=AA,ou=1234,O=GAP,ST=Nord (59),C=FR</td>
+                  <td data-name="responsableContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="supportContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="dateMaj" class="editableCell">2019-09-19 17:38:45</td>
+                  <td><i class="delete fa fa-times fa-lg"></i></td>
+</tr>
+<tr class="domainElement">
+                  <td data-name="nom" class="editableCell"><b>metier15</b></td>
+                  <td data-name="description" class="editableCell">&quot;metier15&quot;</td>
+                  <td data-name="dNCertificatOperateur" class="editableCell">CN=AA,ou=1234,O=GAP,ST=Nord (59),C=FR</td>
+                  <td data-name="responsableContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="supportContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="dateMaj" class="editableCell">2019-09-19 17:38:45</td>
+                  <td><i class="delete fa fa-times fa-lg"></i></td>
+</tr>
+<tr class="domainElement">
+                  <td data-name="nom" class="editableCell"><b>metier16</b></td>
+                  <td data-name="description" class="editableCell">&quot;metier16&quot;</td>
+                  <td data-name="dNCertificatOperateur" class="editableCell">CN=AA,ou=1234,O=GAP,ST=Nord (59),C=FR</td>
+                  <td data-name="responsableContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="supportContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="dateMaj" class="editableCell">2019-09-19 17:38:45</td>
+                  <td><i class="delete fa fa-times fa-lg"></i></td>
+</tr>
+<tr class="domainElement">
+                  <td data-name="nom" class="editableCell"><b>metier17</b></td>
+                  <td data-name="description" class="editableCell">&quot;metier17&quot;</td>
+                  <td data-name="dNCertificatOperateur" class="editableCell">CN=AA,ou=1234,O=GAP,ST=Nord (59),C=FR</td>
+                  <td data-name="responsableContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="supportContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="dateMaj" class="editableCell">2019-09-19 17:38:45</td>
+                  <td><i class="delete fa fa-times fa-lg"></i></td>
+</tr>
+<tr class="domainElement">
+                  <td data-name="nom" class="editableCell"><b>metier18</b></td>
+                  <td data-name="description" class="editableCell">&quot;metier18&quot;</td>
+                  <td data-name="dNCertificatOperateur" class="editableCell">CN=AA,ou=1234,O=GAP,ST=Nord (59),C=FR</td>
+                  <td data-name="responsableContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="supportContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="dateMaj" class="editableCell">2019-09-19 17:38:45</td>
+                  <td><i class="delete fa fa-times fa-lg"></i></td>
+</tr>
+<tr class="domainElement">
+                  <td data-name="nom" class="editableCell"><b>metier19</b></td>
+                  <td data-name="description" class="editableCell">&quot;metier19&quot;</td>
+                  <td data-name="dNCertificatOperateur" class="editableCell">CN=AA,ou=1234,O=GAP,ST=Nord (59),C=FR</td>
+                  <td data-name="responsableContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="supportContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="dateMaj" class="editableCell">2019-09-19 17:38:45</td>
+                  <td><i class="delete fa fa-times fa-lg"></i></td>
+</tr>
+<tr class="domainElement">
+                  <td data-name="nom" class="editableCell"><b>metier20</b></td>
+                  <td data-name="description" class="editableCell">&quot;metier20&quot;</td>
+                  <td data-name="dNCertificatOperateur" class="editableCell">CN=AA,ou=1234,O=GAP,ST=Nord (59),C=FR</td>
+                  <td data-name="responsableContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="supportContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="dateMaj" class="editableCell">2019-09-19 17:38:45</td>
+                  <td><i class="delete fa fa-times fa-lg"></i></td>
+</tr>
+<tr class="domainElement">
+                  <td data-name="nom" class="editableCell"><b>metier21</b></td>
+                  <td data-name="description" class="editableCell">&quot;metier21&quot;</td>
+                  <td data-name="dNCertificatOperateur" class="editableCell">CN=AA,ou=1234,O=GAP,ST=Nord (59),C=FR</td>
+                  <td data-name="responsableContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="supportContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="dateMaj" class="editableCell">2019-09-19 17:38:45</td>
+                  <td><i class="delete fa fa-times fa-lg"></i></td>
+</tr>
+<tr class="domainElement">
+                  <td data-name="nom" class="editableCell"><b>metier22</b></td>
+                  <td data-name="description" class="editableCell">&quot;metier22&quot;</td>
+                  <td data-name="dNCertificatOperateur" class="editableCell">CN=BB,ou=1234,O=GAP,ST=Nord (59),C=FR</td>
+                  <td data-name="responsableContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="supportContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="dateMaj" class="editableCell">2019-09-19 17:38:45</td>
+                  <td><i class="delete fa fa-times fa-lg"></i></td>
+</tr>
+<tr class="domainElement">
+                  <td data-name="nom" class="editableCell"><b>metier23</b></td>
+                  <td data-name="description" class="editableCell">&quot;metier23&quot;</td>
+                  <td data-name="dNCertificatOperateur" class="editableCell">CN=AA,ou=1234,O=GAP,ST=Nord (59),C=FR</td>
+                  <td data-name="responsableContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="supportContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="dateMaj" class="editableCell">2019-09-19 17:38:45</td>
+                  <td><i class="delete fa fa-times fa-lg"></i></td>
+</tr>
+<tr class="domainElement">
+                  <td data-name="nom" class="editableCell"><b>metier24</b></td>
+                  <td data-name="description" class="editableCell">&quot;metier24&quot;</td>
+                  <td data-name="dNCertificatOperateur" class="editableCell">CN=AA,ou=1234,O=GAP,ST=Nord (59),C=FR</td>
+                  <td data-name="responsableContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="supportContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="dateMaj" class="editableCell">2019-09-19 17:38:45</td>
+                  <td><i class="delete fa fa-times fa-lg"></i></td>
+</tr>
+<tr class="domainElement">
+                  <td data-name="nom" class="editableCell"><b>metier25</b></td>
+                  <td data-name="description" class="editableCell">&quot;metier25&quot;</td>
+                  <td data-name="dNCertificatOperateur" class="editableCell">CN=AA,ou=1234,O=GAP,ST=Nord (59),C=FR</td>
+                  <td data-name="responsableContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="supportContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="dateMaj" class="editableCell">2019-09-19 17:38:45</td>
+                  <td><i class="delete fa fa-times fa-lg"></i></td>
+</tr>
+<tr class="domainElement">
+                  <td data-name="nom" class="editableCell"><b>metier26</b></td>
+                  <td data-name="description" class="editableCell">&quot;metier26&quot;</td>
+                  <td data-name="dNCertificatOperateur" class="editableCell">CN=AA,ou=1234,O=GAP,ST=Nord (59),C=FR</td>
+                  <td data-name="responsableContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="supportContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="dateMaj" class="editableCell">2019-09-19 17:38:45</td>
+                  <td><i class="delete fa fa-times fa-lg"></i></td>
+</tr>
+<tr class="domainElement">
+                  <td data-name="nom" class="editableCell"><b>metier27</b></td>
+                  <td data-name="description" class="editableCell">&quot;metier27&quot;</td>
+                  <td data-name="dNCertificatOperateur" class="editableCell">CN=AA,ou=1234,O=GAP,ST=Nord (59),C=FR</td>
+                  <td data-name="responsableContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="supportContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="dateMaj" class="editableCell">2019-09-19 17:38:45</td>
+                  <td><i class="delete fa fa-times fa-lg"></i></td>
+</tr>
+<tr class="domainElement">
+                  <td data-name="nom" class="editableCell"><b>metier28</b></td>
+                  <td data-name="description" class="editableCell">&quot;metier28&quot;</td>
+                  <td data-name="dNCertificatOperateur" class="editableCell">CN=AA,ou=1234,O=GAP,ST=Nord (59),C=FR</td>
+                  <td data-name="responsableContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="supportContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="dateMaj" class="editableCell">2019-09-19 17:38:45</td>
+                  <td><i class="delete fa fa-times fa-lg"></i></td>
+</tr>
+<tr class="domainElement">
+                  <td data-name="nom" class="editableCell"><b>metier29</b></td>
+                  <td data-name="description" class="editableCell">&quot;metier29&quot;</td>
+                  <td data-name="dNCertificatOperateur" class="editableCell">CN=AA,ou=1234,O=GAP,ST=Nord (59),C=FR</td>
+                  <td data-name="responsableContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="supportContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="dateMaj" class="editableCell">2019-09-19 17:38:45</td>
+                  <td><i class="delete fa fa-times fa-lg"></i></td>
+</tr>
+<tr class="domainElement">
+                  <td data-name="nom" class="editableCell"><b>metier30</b></td>
+                  <td data-name="description" class="editableCell">&quot;metier30&quot;</td>
+                  <td data-name="dNCertificatOperateur" class="editableCell">CN=BB,ou=1234,O=GAP,ST=Nord (59),C=FR</td>
+                  <td data-name="responsableContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="supportContact" class="editableCell">nom1 prenom1</td>
+                  <td data-name="dateMaj" class="editableCell">2019-09-19 17:38:45</td>
+                  <td><i class="delete fa fa-times fa-lg"></i></td>
+</tr>
+
+            
+			
+			 </tbody>
+			</table>
+	  <br/>
+	  <div id="ajouterDomaine"><u>Ajouter domaine</u></div>
+	  
+  </div>
+  <div id="tabs-2">
+	  <div id="historiqueTable">
+			
+            histo1<br/>
+            histo2<br/>
+            histo3<br/>
+            histo4<br/>
+            histo5<br/>
+            histo6<br/>
+            histo7<br/>
+            histo8<br/>
+            histo9<br/>
+            histo10<br/>
+            histo11<br/>
+            histo12<br/>
+            histo13<br/>
+            histo14<br/>
+            histo15<br/>
+            histo16<br/>
+            histo17<br/>
+            histo18<br/>
+            histo19<br/>
+            histo20<br/>
+
+			
+	  </div>
+	  <div id="messageHistorique" class="messageOk">All Good</div>
+  </div>
+<div id="popup-delete-domain" title="Confirmation">
+  Etes-vous s&ucirc;r de vouloir supprimer ce truc ?
+</div>
+
+
+<!--</table>-->
+</form>
+
+
+
+
+
+
+</body>
+</html>

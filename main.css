@@ -1,0 +1,324 @@
+.tabLabel
+{
+color: #376092;
+}
+
+#domainTable
+{
+margin-top: 15px;
+}
+
+.bold
+{
+font-weight: bold;
+}
+
+#nombreDomaines
+{
+margin-left: 180px;
+}
+
+body
+{
+font-size:13px;
+}
+
+.delete
+{
+color: red;
+}
+
+.floatedCell {
+  float:left;
+  width: 10%; 
+  height:100%;
+  padding-top: 5px;
+   padding-bottom: 5px;
+	 
+}
+.clear {
+  clear: both;   
+}
+.row {
+  	font-family: Arial,sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	width: 100%;
+	border-bottom: 2px solid white;
+	border-left: 2px solid white; 
+
+}
+
+.rowLabel
+{
+	font-weight: normal;
+}
+
+.normal
+{
+	font-weight: normal;
+}
+
+.masterRow
+{
+	background-color: #4f81bd;
+	color: white;
+	font-family: Arial,sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	
+}
+
+.evenRow
+{
+	background-color: #d0d8e8;
+}
+
+.oddRow
+{
+	background-color: #e9edf4;
+}
+
+.newRow
+{
+	background-color: #ffffd8;
+}
+
+.arrowCol
+{
+	width: 3%;
+}
+
+.libelleCol
+{
+	width: 15%;
+}
+
+.descriptionCol
+{
+	width: 77%;
+	border-left: 2px solid #fff;
+	padding-left: 3px;
+	min-height: 18px;
+}
+
+.descriptionCol[data-name=nom]
+{
+	min-height: 25px;
+}
+
+.deleteCol
+{
+	width: 3%;
+}
+
+i 
+{ 
+cursor: pointer;
+margin-left: 5px;
+margin-top: -5px;
+ }
+ 
+ .editable
+ {
+ background-color: white;
+ border : 2px solid #85BAFA; 
+
+outline: none; 
+ }
+ 
+ .editableCell
+ {
+  height: 0px;
+  word-wrap: break-word;
+  min-height: 18px;
+ }
+ 
+ #ajouterDomaine
+ {
+ text-decoration: underline;
+ margin-top: 10px;
+ margin-left: 10px;
+ cursor: pointer;
+ width: 120px;
+ }
+ 
+button.light-blue {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #000000;
+	padding: 5px 14px;
+	background: -moz-linear-gradient(
+		top,
+		#ffffff 0%,
+		#dfeffa 50%,
+		#d4daff);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#ffffff),
+		color-stop(0.50, #dfeffa),
+		to(#d4daff));
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	border: 2px solid #68aafc;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 3px rgba(255,255,255,1);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 3px rgba(255,255,255,1);
+	box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 3px rgba(255,255,255,1);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.1),
+		0px 1px 0px rgba(255,255,255,1);
+}
+
+button.dark-blue {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #ffffff;
+	padding: 5px 14px;
+	background-color: #3e699e;
+	background: -moz-linear-gradient(
+		top,
+		#3e699e 0%,
+		#3e699e 50%,
+		#3e699e);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#3e699e),
+		color-stop(0.50, #3e699e),
+		to(#3e699e));
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	border: 2px solid #7b91ad;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 3px rgba(255,255,255,1);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 3px rgba(255,255,255,1);
+	box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 3px rgba(255,255,255,1);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.1),
+		0px 1px 0px rgba(255,255,255,1);
+}
+
+#visualiserXML
+{
+margin-top: 15px;
+margin-left: 15px;
+ cursor: pointer;
+}
+
+#signerPublier
+{
+margin-top: 15px;
+margin-left: 15px;
+ cursor: pointer;
+ float: right;
+}
+
+#deconnexion
+{
+float: right;
+text-decoration: underline;
+font-size: 14px;
+cursor: pointer;
+font-weight: bold;
+margin-bottom: 10px;
+margin-right: 10px;
+}
+
+.historiqueData
+{
+font-weight: normal;
+}
+
+.datePublicationCell
+{
+width: 25%;
+}
+
+.listeBlancheCell
+{
+width: 35%;
+}
+
+.fichierLogCell
+{
+width: 35%;
+}
+
+#historiqueTable .row
+{
+height: 100%;
+min-height: 25px;
+}
+
+#historiqueTable .floatedCell
+{
+margin-left: 10px;
+}
+
+textarea {
+    resize: none;
+}
+
+.messageOk
+{
+	color: green;
+	
+}
+
+.messageErreur
+{
+	color: red;
+}
+
+#commentaire
+{
+	margin: 10px;
+}
+
+textarea
+{
+	margin: 10px;
+	margin-bottom: 0px;
+	width: 80%;
+	border:2px solid #9ecaed;
+    border-radius:7px;
+}
+
+input:focus { 
+    outline:none;
+    border-color:#9ecaed;
+    box-shadow:0 0 10px #9ecaed;
+}
+
+#signature
+{
+	margin: 10px;
+	margin-top: 20px;
+}
+
+input
+{
+	margin: 10px;
+	margin-top: 5px;
+	width: 81%;
+	border:2px solid #9ecaed;
+    border-radius:5px;
+}
+
+textarea:focus { 
+    outline:none;
+    border-color:#9ecaed;
+    box-shadow:0 0 10px #9ecaed;
+}
